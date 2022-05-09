@@ -54,10 +54,6 @@ header .sectionIcons1 .iconHome {
     width: 90px;
 }
 
-header .sectionHeader {
-    padding: 12%;
-}
-
 header h1 {
     font-family: acuminUltraBlack !important;
     font-size: 60px;
@@ -91,6 +87,12 @@ header .sectionIcons2 input {
     padding-left: 5px;
 }
 
+/* .insideSection {
+    margin-top: 470%;
+    margin-left: -15%;
+    overflow: hidden;
+} */
+
 
 /* SEGUNDA SECCION */
 
@@ -104,11 +106,6 @@ header .sectionIcons2 input {
     width: 100%;
     height: auto;
     min-height: 300px;
-}
-
-.secondSectionTitles {
-    padding: 19%;
-    overflow: hidden;
 }
 
 .secondSection .firstTitle {
@@ -161,15 +158,11 @@ header .sectionIcons2 input {
     height: auto;
     min-height: 300px;
     z-index: 1;
-    margin-top: -5%;
+    /* margin-top: -5%; */
     -moz-box-shadow: 0px 3px 8px rgb(100, 100, 100);
     -webkit-box-shadow: 0px 3px 8px rgb(100, 100, 100);
     box-shadow: 0px 3px 8px rgb(100, 100, 100);
     /* margin-top: 5%; */
-}
-
-.thirdSection {
-    padding: 10%;
 }
 
 #ajustMargin {
@@ -177,56 +170,21 @@ header .sectionIcons2 input {
 }
 
 .thirdSection .fondoBox {
+    overflow: hidden;
     -webkit-filter: drop-shadow(0px 5px 10px gray);
     filter: drop-shadow(0px 5px 10px gray);
 }
 
-.thirdSection .absoluteImg {
-    top: 75px;
-    left: 137px;
-}
-
-.thirdSection .thidSectionTitles {
-    position: absolute;
-    font-size: 40px;
-    top: 310px;
-    left: 60px;
-    color: #606060;
-}
-
-.thirdSection .thidSectionTitles h4 {
-    font-size: 28px;
-}
-
-.thirdSection .thidSectionTitles .firstTitleThird {
-    font-size: 45px;
-    text-decoration: underline;
-    font-weight: 900;
-}
-
-.thirdSection .absoluteImg2 {
-    top: 65px;
-    left: 165px;
-}
-
-.thirdSection .absoluteImg3 {
-    top: 62px;
-    left: 155px;
-}
-
 /* FONDO BURBUJA DE COLORES */
 
-.insideSection {
-    margin-top: 43%;
-    margin-left: -15%;
-    overflow: hidden;
+img#bubleImg {
+    left: 0%;
 }
 
 .insideSection .textInsideSection {
     text-align: center;
-    position: absolute;
-    top: 25%;
-    left: 18%;
+    margin-top: 7%;
+    margin-left: 4%;
 }
 
 .insideSection .textInsideSection .firsTitleInside {
@@ -245,7 +203,7 @@ header .sectionIcons2 input {
     overflow: hidden;
     text-decoration: underline;
     overflow: hidden;
-    font-size: 60px !important;
+    font-size: 60px;
 }
 
 .insideSection .textInsideSection h4 {
@@ -254,7 +212,7 @@ header .sectionIcons2 input {
 }
 
 .fithSection {
-    margin-top: 65%;
+    margin-top: 12%;
 }
 
 .sectionFooter {
@@ -262,3 +220,322 @@ header .sectionIcons2 input {
     object-fit: contain;
     margin-top: -8.5%;
 }
+
+
+/* RESPONSIVE */
+
+@media (min-width: 375px) {
+
+    /* PRIMERA SECCION */
+
+    .sectionHeader .sectionHeaderContent {
+        flex-direction: column !important;
+        overflow: hidden;
+        /* margin-left: -5px; */
+    }
+
+    .sectionHeader .sectionHeaderContent h1 {
+        text-align: center;
+        margin: 10px 0 10px 0;
+        font-size: 48px;
+    }
+
+    .sectionHeader h4 {
+        margin-left: 20px;
+        max-width: 280px;
+        font-size: 22px;
+    }
+
+    .sectionIcons2 {
+        z-index: 100000;
+    }
+
+    /* SEGUNDA SECCION */
+
+    .secondSectionTitles {
+        padding: 25% 7% 25% 7%;
+        text-align: center;
+    }
+
+    .secondSection .secondSectionTitles h4 {
+        font-size: 35px;
+    }
+
+    /* TERCERA SECCION */
+
+    .thirdSectionBoxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thirdSectionBoxes .fondoBox {
+        width: 300px !important;
+        margin-bottom: 10px;
+        margin: 25px;
+    }
+
+    .thirdSection .thidSectionTitles {
+        position: absolute;
+        top: 45%;
+        left: 18%;
+        color: #606060;
+    }
+
+    .thirdSection .thidSectionTitles h4 {
+        font-size: 22px;
+    }
+
+    .thirdSection .absoluteImg {
+        top: 11%;
+        left: 33%;
+    }
+
+    .thirdSection .absoluteImg2 {
+        top: 11%;
+        left: 40%;
+    }
+
+    .thirdSection .absoluteImg3 {
+        top: 11%;
+        left: 36%;
+    }
+
+    .thirdSection .thidSectionTitles .firstTitleThird {
+        font-size: 35px;
+        text-decoration: underline;
+        font-weight: 900;
+    }
+
+    /* QUINTA SECCION */
+
+    .fithSection {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 15%;
+    }
+
+    /* .insideSection {
+        margin-top: 470%;
+        margin-left: -15%;
+        overflow: hidden;
+    } */
+
+    .insideSection .textInsideSection .firsTitleInside {
+        font-size: 20px;
+    }
+
+    .insideSection .textInsideSection h4 {
+        font-size: 15px;
+        margin-top: -22px;
+    }
+
+}
+
+@media (min-width: 414px) {
+
+    .fithSection {
+        margin-top: 20%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* PRIMERA SECCION */
+
+    header .sectionHeader {
+        padding: 12%;
+    }
+
+    .sectionIcons1 {
+        display: flex;
+        justify-content: flex-end !important;
+    }
+
+    /* SEGUNDA SECCION */
+
+    .secondSectionTitles {
+        padding: 19%;
+        overflow: hidden;
+    }
+
+    .secondSectionTitles {
+        padding: 25% 7% 25% 7%;
+        text-align: left;
+    }
+
+    /* TERCERA SECCION */
+
+    .thirdSectionBoxes .fondoBox {
+        margin: 5%;
+    }
+
+    .thirdSection .thidSectionTitles .firstTitleThird {
+        /* font-size: 45px; */
+        text-decoration: underline;
+        font-weight: 900;
+    }
+
+    .thirdSection .thidSectionTitles {
+        left: 13%;
+    }
+
+    /* .insideSection .textInsideSection {
+        left: 23%;
+    } */
+
+    .insideSection .textInsideSection .firsTitleInside {
+        font-size: 40px;
+    }
+
+    .insideSection .textInsideSection h4 {
+        font-size: 25px;
+    }
+
+    /* QUINTA SECCION */
+
+    .fithSection img {
+        width: 90%;
+        min-height: 250px;
+        padding: 2%;
+    }
+
+    /* INSIDE SECTION */
+
+    /* .insideSection {
+        margin-top: 205%;
+        margin-left: -15%;
+        overflow: hidden;
+    } */
+
+}
+
+@media (min-width: 1024px) {
+    /* .insideSection {
+        margin-top: 155%;
+        margin-left: -15%;
+        overflow: hidden;
+    } */
+
+    /* .insideSection .textInsideSection {
+        left: 27%;
+    } */
+
+    .insideSection {
+        margin-top: 5%;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    h4.text-white.p-1 {
+        color: black !important;
+    }
+
+    .sectionIcons1.d-flex.justify-content-center.align-items-center {
+        display: flex;
+        justify-content: flex-end !important;
+    }
+
+    .sectionHeader .sectionHeaderContent {
+        flex-direction: row !important;
+        overflow: hidden;
+    }
+
+    .sectionHeader .sectionHeaderContent h1 {
+        font-size: 60px;
+    }
+
+    .sectionHeader h4 {
+        font-size: 35px;
+    }
+
+    .sectionHeader h4 {
+        max-width: 500px;
+    }
+
+    .secondSection .secondSectionTitles h4 {
+        font-size: 60px;
+    }
+
+    .thirdSectionBoxes.d-flex.justify-content-center.align-items-center {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .thirdSection .absoluteImg2 {
+        top: 8%;
+        left: 40%;
+    }
+
+    .thirdSection .absoluteImg {
+        top: 10%;
+        left: 30%;
+    }
+
+    .thirdSection .absoluteImg3 {
+        top: 8%;
+        left: 35%;
+    }
+
+    .insideSection .textInsideSection {
+        margin-top: 10%;
+        /* left: 27%; */
+    }
+
+    .insideSection .textInsideSection .firsTitleInside {
+        font-size: 60px;
+        margin: 10px;
+    }
+
+    .insideSection .textInsideSection h4 {
+        font-size: 35px;
+    }
+
+    .insideSection .textInsideSection {
+        top: 30%;
+        /* left: 29%; */
+    }
+
+    .fithSection img {
+        width: 80%;
+        min-height: 350px;
+    }
+
+}
+
+/* @media (min-width: 1440px){
+    .insideSection .textInsideSection {
+        top: 30%;
+        left: 30%;
+    }
+} */
+
+/* @media (min-width: 1600px){
+    .insideSection .textInsideSection {
+        top: 25%;
+        left: 32%;
+    }
+} */
+
+/* @media (min-width: 1920px) {
+
+    .insideSection .textInsideSection {
+        margin-top: 13%;
+        /* left: 27%; */
+
+    /* .insideSection {
+        margin-top: 35%;
+        margin-left: -5%;
+        overflow: hidden;
+        width: 100%;
+    } */
+
+/* @media (min-width: 2560px){
+    .insideSection .textInsideSection {
+        top: 33%;
+        left: 35%;
+    }
+} */
