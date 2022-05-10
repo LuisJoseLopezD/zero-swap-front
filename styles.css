@@ -178,6 +178,7 @@ header .sectionIcons2 input {
 /* FONDO BURBUJA DE COLORES */
 
 img#bubleImg {
+    min-height: 200px;
     left: 0%;
 }
 
@@ -218,7 +219,7 @@ img#bubleImg {
 .sectionFooter {
     z-index: 100000000;
     object-fit: contain;
-    margin-top: 5%;
+    margin-top: 12%;
 }
 
 
@@ -315,11 +316,11 @@ img#bubleImg {
     } */
 
     .insideSection .textInsideSection .firsTitleInside {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .insideSection .textInsideSection h4 {
-        font-size: 15px;
+        font-size: 22px;
         margin-top: -22px;
     }
 
@@ -336,7 +337,7 @@ img#bubleImg {
 @media (min-width: 414px) {
 
     .sectionFooter {
-        margin-top: 18%;
+        margin-top: 12%;
     } */
 
     /* .fithSection {
@@ -395,7 +396,7 @@ img#bubleImg {
     }
 
     .insideSection .textInsideSection h4 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /* QUINTA SECCION */
@@ -441,6 +442,10 @@ img#bubleImg {
     /* .insideSection .textInsideSection {
         left: 27%;
     } */
+
+    .insideSection .textInsideSection h4 {
+        font-size: 35px;
+    }
 
     .insideSection {
         margin-top: 5%;
