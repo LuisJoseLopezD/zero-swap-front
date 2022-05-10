@@ -218,7 +218,7 @@ img#bubleImg {
 .sectionFooter {
     z-index: 100000000;
     object-fit: contain;
-    margin-top: -8.5%;
+    margin-top: 5%;
 }
 
 
@@ -308,10 +308,6 @@ img#bubleImg {
 
     /* QUINTA SECCION */
 
-    .fithSection {
-        margin-bottom: 15%;
-    }
-
     /* .insideSection {
         margin-top: 470%;
         margin-left: -15%;
@@ -330,10 +326,18 @@ img#bubleImg {
     .content3third.d-flex.position-relative {
         margin-bottom: 5%;
     }
+/* 
+    .sectionFooter {
+        margin-top: 18%;
+    } */
 
 }
 
 @media (min-width: 414px) {
+
+    .sectionFooter {
+        margin-top: 18%;
+    } */
 
     /* .fithSection {
         margin-top: 20% !important;
@@ -419,6 +423,10 @@ img#bubleImg {
 
     .content3third.d-flex.position-relative {
         margin-bottom: 0%;
+    }
+
+    .sectionFooter {
+        margin-top: 20%;
     }
 
 }
@@ -519,6 +527,14 @@ img#bubleImg {
         margin-bottom: 0%;
     }
 
+    .sectionFooter {
+        margin-top: 15%;
+    }
+
+    .thirdSectionBoxes.d-flex.justify-content-center.align-items-center {
+        margin: 0% 0 0% 0;
+    }
+
 }
 
 /* @media (min-width: 1440px){
@@ -531,6 +547,9 @@ img#bubleImg {
 @media (min-width: 1600px){
     .fithSection.row.mx-auto {
         margin-top: 25%;
+    }
+    .sectionFooter {
+        margin-top: 20%;
     }
 }
 
@@ -547,8 +566,8 @@ img#bubleImg {
         width: 100%;
     } */
 
-/* @media (min-width: 2560px){
-    .fithSection {
-        margin-top: 30% !important;
+@media (min-width: 2560px){
+    .sectionFooter {
+        margin-top: 25%;
     }
-} */
+}
