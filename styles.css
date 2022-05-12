@@ -478,8 +478,16 @@ img#bubleImg {
         max-width: 500px;
     }
 
-    .secondSection .secondSectionTitles h4 {
+    #firstTitleSecondSection {
         font-size: 60px;
+    }
+
+    #titlesNFT {
+        font-size: 35px;
+    }
+
+    .secondSection .secondSectionTitles h4 {
+        font-size: 35px;
     }
 
     .thirdSectionBoxes.d-flex.justify-content-center.align-items-center {
