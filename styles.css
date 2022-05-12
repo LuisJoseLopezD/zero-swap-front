@@ -189,7 +189,7 @@ img#bubleImg {
 }
 
 .insideSection .textInsideSection .firsTitleInside {
-    font-family: acumin !important;
+    font-family: acuminUltraBlack !important;
     transform: scaleY(1.4);
     -ms-transform: scaleY(1.4);
     /* IE */
@@ -208,7 +208,7 @@ img#bubleImg {
 }
 
 .insideSection .textInsideSection h4 {
-    font-family: acuminThing !important;
+    font-family: acumin !important;
     font-size: 50px;
 }
 
